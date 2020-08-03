@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page </title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap&subset=latin-ext"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+
+<body>
+<div class="container">
+    <h1>Calculate how much you'll pay</h1>
+    <section class="sectionForm">
+        <form action="">
+            <label class="quantityContainer">
+                <input type="number" id="quantity" name="" placeholder="Products quantity" min='0'><br>
+            </label>
+            <div class="nonActiveQuantity"></div>
+            <label class="monthsOrderContainer">
+                <input type="number" id="monthsOrder" name="" placeholder="Estimated orders in month" min='0'><br>
+            </label>
+            <div class="nonActiveMonthsOrder"></div>
+            <label class="packagesContainer">
+                <select id="packages">
+                    <option hidden disabled selected value>Choose Package</option>
+                    <option value="Basic">Basic</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </label>
+            <div class="nonActiveSelectPackages"></div>
+            <br>
+            <label class="inputAccountingContainer">
+                <input type="checkbox" class="inputAccounting">Accounting
+            </label>
+            <div class="nonActiveInputAccounting"></div>
+            <br>
+            <label class="inputRentalContainer"><input type="checkbox" class="inputRental">Rental of
+                payment terminal
+            </label>
+            <div class="nonActiveInputRental"></div>
+        </form>
+    </section>
+    <div class="btnContainer">
+        <div class="buttonSum">Total: <span class="btnTotal">$</span></div>
+    </div>
+</div>
+<script src="js/calculator.js">
+</script>
+</body>
+
+</html>
