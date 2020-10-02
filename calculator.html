@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page </title>
+    <title>BestShop Calculator</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap&subset=latin-ext"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
 <div class="container">
     <h1>Calculate how much you'll pay</h1>
-    <section class="sectionForm">
+    <section class="formSection">
         <form action="">
             <label class="quantityContainer">
                 <input type="number" id="quantity" name="" placeholder="Products quantity" min='0'><br>
@@ -32,21 +32,21 @@
                     <option value="Premium">Premium</option>
                 </select>
             </label>
-            <div class="nonActiveSelectPackages"></div>
+            <div class="nonActivePackages"></div>
             <br>
-            <label class="inputAccountingContainer">
-                <input type="checkbox" class="inputAccounting">Accounting
+            <label class="accountingContainer">
+                <input type="checkbox" class="accounting">Accounting
             </label>
-            <div class="nonActiveInputAccounting"></div>
+            <div class="nonActiveAccounting"></div>
             <br>
-            <label class="inputRentalContainer"><input type="checkbox" class="inputRental">Rental of
+            <label class="rentalContainer"><input type="checkbox" class="rental">Rental of
                 payment terminal
             </label>
-            <div class="nonActiveInputRental"></div>
+            <div class="nonActiveRental"></div>
         </form>
     </section>
     <div class="btnContainer">
-        <div class="buttonSum">Total: <span class="btnTotal">$</span></div>
+        <div class="sum">Total: <span class="total">$</span></div>
     </div>
 </div>
 <script src="js/calculator.js">
