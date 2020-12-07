@@ -1,4 +1,4 @@
-h1 {
+.calculatorH1 {
     font-size: 36px;
     font-family: 'Raleway';
     font-weight: normal;
@@ -7,12 +7,12 @@ h1 {
     padding-bottom: 30px;
 }
 
-.container {
+.calculatorContainer {
     width: 1200px;
     height: 450px;
     background-color: #F7F7F7;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 20px auto 0;
 }
 
 input[type="number"] {
@@ -25,20 +25,20 @@ input[type="number"]::placeholder {
     font-size: 13px;
 }
 
-select {
+#packages {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-image: url(../assets/Arrow_Down.svg);
+    background-image: url(../../assets/Arrow_Down.svg);
     background-repeat: no-repeat;
-    background-position-x: 380px;
+    background-position-x: 400px;
     background-position-y: center;
     padding-left: 10px;
     font-family: 'Open Sans';
     color: #ccc;
 }
 
-.sectionForm {
+.calculatorFormSection {
     display: flex;
     justify-content: flex-start;
     margin-left: 40px;
@@ -138,11 +138,11 @@ select {
     display: flex;
 }
 
-.nonActiveSelectPackages {
+.nonActivePackages {
     display: none;
 }
 
-.activeSelectPackages {
+.activePackages {
     display: block;
     position: absolute;
     top: 201px;
@@ -160,7 +160,7 @@ select {
     font-family: 'Open Sans';
 }
 
-.inputAccountingContainer {
+.accountingContainer {
     position: absolute;
     top: 300px;
     left: 400px;
@@ -170,11 +170,11 @@ select {
     font-size: 12px;
 }
 
-.nonActiveInputAccounting {
+.nonActiveAccounting {
     display: none;
 }
 
-.activeInputAccounting {
+.activeAccounting {
     display: block;
     position: absolute;
     top: 243px;
@@ -192,7 +192,7 @@ select {
     font-family: 'Open Sans';
 }
 
-.inputRentalContainer {
+.rentalContainer {
     position: absolute;
     top: 340px;
     left: 400px;
@@ -202,11 +202,11 @@ select {
     font-size: 12px;
 }
 
-.nonActiveInputRental {
+.nonActiveRental {
     display: none;
 }
 
-.activeInputRental {
+.activeRental {
     display: block;
     position: absolute;
     top: 286px;
@@ -229,7 +229,7 @@ select {
     justify-content: flex-end;
 }
 
-.buttonSum {
+.sum {
     position: absolute;
     top: 345px;
     right: 370px;
@@ -246,20 +246,19 @@ select {
     font-family: 'Open Sans';
 }
 
-.btnTotal {
+.total {
     font-family: 'Open Sans';
     font-size: 20px;
     font-weight: bold;
-    padding-left: 60px;
+    padding-left: 40px;
 }
 
-.inputAccountingContainer {
+.accountingContainer {
     display: flex;
     align-items: center;
-    margin-left: -4px;
 }
 
-.inputAccounting {
+.accounting {
     -webkit-appearance: none;
     position: relative;
     width: 24px;
@@ -271,25 +270,24 @@ select {
     margin-right: 10px;
 }
 
-.inputAccounting:hover {
+.accounting:hover {
     background-color: #ddd;
 }
 
-.inputAccounting:focus {
+.accounting:focus {
     outline: none;
 }
 
-.inputAccounting:checked {
+.accounting:checked {
     background-color: #fff;
 }
 
-.inputAccounting:checked:after {
-    content: url(../assets/Checkmark.svg);
+.accounting:checked:after {
+    content: url(../../assets/Checkmark.svg);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(../assets/Checkmark.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -297,13 +295,12 @@ select {
     height: 11px;
 }
 
-.inputRentalContainer {
+.rentalContainer {
     display: flex;
     align-items: center;
-    margin-left: -4px;
 }
 
-.inputRental {
+.rental {
     -webkit-appearance: none;
     position: relative;
     width: 24px;
@@ -315,25 +312,24 @@ select {
     margin-right: 10px;
 }
 
-.inputRental:hover {
+.rental:hover {
     background-color: #ddd;
 }
 
-.inputRental:focus {
+.rental:focus {
     outline: none;
 }
 
-.inputRental:checked {
+.rental:checked {
     background-color: #fff;
 }
 
-.inputRental:checked:after {
-    content: url(../assets/Checkmark.svg);
+.rental:checked:after {
+    content: url(../../assets/Checkmark.svg);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(../assets/Checkmark.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -353,11 +349,11 @@ select {
     right: 5px;
 }
 
-.ordersNumbers {
+.orderNumbers {
     margin-left: 100px;
 }
 
-.ordersSum {
+.orderSum {
     font-size: 18px;
     font-weight: 600;
     position: absolute;
@@ -365,11 +361,11 @@ select {
     right: 5px;
 }
 
-.selectPackage {
+.chosenPackage {
     margin-left: 95px;
 }
 
-.selectValue {
+.packageValue {
     position: absolute;
     top: 0;
     right: 5px;
@@ -377,7 +373,7 @@ select {
     font-weight: 600;
 }
 
-.spanAccountingValue {
+.accountingValue {
     position: absolute;
     top: 0;
     right: 5px;
@@ -385,7 +381,7 @@ select {
     font-weight: 600;
 }
 
-.spanRentalValue {
+.rentalValue {
     position: absolute;
     top: 0;
     right: 5px;
@@ -412,32 +408,33 @@ select {
         left: 360px;
     }
 
-    .activeSelectPackages {
+    .activePackages {
         right: 290px;
     }
 
     #packages {
         width: 420px;
         left: 360px;
+        background-position-x: 386px;
     }
 
-    .inputAccountingContainer {
+    .accountingContainer {
         left: 360px;
     }
 
-    .inputRentalContainer {
+    .rentalContainer {
         left: 360px;
     }
 
-    .activeInputAccounting {
+    .activeAccounting {
         right: 290px;
     }
 
-    .activeInputRental {
+    .activeRental {
         right: 290px;
     }
 
-    .buttonSum {
+    .sum {
         right: 290px;
     }
 }
@@ -461,38 +458,39 @@ select {
         left: 330px;
     }
 
-    .activeSelectPackages {
+    .activePackages {
         right: 210px;
     }
 
     #packages {
         width: 380px;
         left: 330px;
+        background-position-x: 342px;
     }
 
-    .inputAccountingContainer {
+    .accountingContainer {
         left: 330px;
     }
 
-    .inputRentalContainer {
+    .rentalContainer {
         left: 330px;
     }
 
-    .activeInputAccounting {
+    .activeAccounting {
         right: 210px;
     }
 
-    .activeInputRental {
+    .activeRental {
         right: 210px;
     }
 
-    .buttonSum {
+    .sum {
         right: 210px;
     }
 }
 
 @media (max-width: 1351px) and (min-width: 1150px) {
-    .container {
+    .calculatorContainer {
         width: 1050px;
     }
 
@@ -514,38 +512,39 @@ select {
         left: 200px;
     }
 
-    .activeSelectPackages {
+    .activePackages {
         right: 180px;
     }
 
-    .inputAccountingContainer {
+    .accountingContainer {
         left: 200px;
     }
 
-    .inputRentalContainer {
+    .rentalContainer {
         left: 200px;
     }
 
     #packages {
         width: 340px;
         left: 200px;
+        background-position-x: 302px;
     }
 
-    .activeInputAccounting {
+    .activeAccounting {
         right: 180px;
     }
 
-    .activeInputRental {
+    .activeRental {
         right: 180px;
     }
 
-    .buttonSum {
+    .sum {
         right: 180px;
     }
 }
 
 @media (max-width: 1149px) and (min-width: 1000px) {
-    .container {
+    .calculatorContainer {
         width: 980px;
     }
 
@@ -567,42 +566,43 @@ select {
         left: 200px;
     }
 
-    .activeSelectPackages {
+    .activePackages {
         right: 100px;
     }
 
-    .inputAccountingContainer {
+    .accountingContainer {
         left: 200px;
     }
 
-    .inputRentalContainer {
+    .rentalContainer {
         left: 200px;
     }
 
     #packages {
         width: 270px;
         left: 200px;
+        background-position-x: 232px;
     }
 
-    .activeInputAccounting {
+    .activeAccounting {
         right: 100px;
     }
 
-    .activeInputRental {
+    .activeRental {
         right: 100px;
     }
 
-    .buttonSum {
+    .sum {
         right: 100px;
     }
 }
 
 @media (max-width: 999px) and (min-width: 850px) {
-    .container {
+    .calculatorContainer {
         width: 830px;
     }
 
-    h1 {
+    .calculatorH1 {
         font-size: 30px;
     }
 
@@ -628,17 +628,17 @@ select {
         height: 35px;
     }
 
-    .activeSelectPackages {
+    .activePackages {
         right: 100px;
         width: 325px;
     }
 
-    .inputAccountingContainer {
+    .accountingContainer {
         left: 150px;
         width: 325px;
     }
 
-    .inputRentalContainer {
+    .rentalContainer {
         left: 150px;
     }
 
@@ -646,29 +646,30 @@ select {
         width: 230px;
         left: 150px;
         height: 35px;
+        background-position-x: 192px;
     }
 
-    .activeInputAccounting {
+    .activeAccounting {
         right: 100px;
         width: 325px;
     }
 
-    .activeInputRental {
+    .activeRental {
         right: 100px;
         width: 325px;
     }
 
-    .buttonSum {
+    .sum {
         right: 100px;
     }
 }
 
 @media (max-width: 849px) and (min-width: 700px) {
-    .container {
+    .calculatorContainer {
         width: 680px;
     }
 
-    h1 {
+    .calculatorH1 {
         font-size: 26px;
     }
 
@@ -684,7 +685,7 @@ select {
     }
 
     .productsNumbers {
-        margin-left: 45px;
+        margin-left: 35px;
     }
 
     .activeMonthsOrder {
@@ -698,25 +699,25 @@ select {
         height: 30px;
     }
 
-    .ordersNumbers {
-        margin-left: 55px;
+    .orderNumbers {
+        margin-left: 45px;
     }
 
-    .activeSelectPackages {
+    .activePackages {
         right: 100px;
         width: 255px;
     }
 
-    .selectPackage {
+    .chosenPackage {
         margin-left: 45px;
     }
 
-    .inputAccountingContainer {
+    .accountingContainer {
         left: 100px;
         width: 325px;
     }
 
-    .inputRentalContainer {
+    .rentalContainer {
         left: 100px;
     }
 
@@ -724,19 +725,20 @@ select {
         width: 200px;
         left: 100px;
         height: 30px;
+        background-position-x: 170px;
     }
 
-    .activeInputAccounting {
+    .activeAccounting {
         right: 100px;
         width: 255px;
     }
 
-    .activeInputRental {
+    .activeRental {
         right: 100px;
         width: 255px;
     }
 
-    .buttonSum {
+    .sum {
         right: 100px;
         height: 30px;
         line-height: 30px;
@@ -744,18 +746,18 @@ select {
         padding-left: 10px;
     }
 
-    .btnTotal {
-        padding-left: 40px;
+    .total {
+        padding-left: 32px;
     }
 }
 
 @media (max-width: 699px) and (min-width: 550px) {
-    .container {
+    .calculatorContainer {
         width: 530px;
         height: 385px;
     }
 
-    h1 {
+    .calculatorH1 {
         font-size: 26px;
     }
 
@@ -783,11 +785,16 @@ select {
     #quantity {
         width: 135px;
         left: 90px;
-        height: 25px;
+        height: 30px;
     }
 
     .productsNumbers {
-        margin-left: 25px;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+    .productsSum {
+        font-size: 14px;
     }
 
     .activeMonthsOrder {
@@ -798,17 +805,30 @@ select {
         padding-left: 10px;
     }
 
+    .accountingValue {
+        font-size: 14px;
+    }
+
+    .rentalValue {
+        font-size: 14px;
+    }
+
     #monthsOrder {
         width: 135px;
         left: 90px;
-        height: 25px;
+        height: 30px;
     }
 
-    .ordersNumbers {
+    .orderNumbers {
         margin-left: 25px;
+        font-size: 12px;
     }
 
-    .activeSelectPackages {
+    .orderSum {
+        font-size: 14px;
+    }
+
+    .activePackages {
         right: 90px;
         width: 200px;
         height: 28px;
@@ -816,38 +836,52 @@ select {
         padding-left: 10px;
     }
 
-    .selectPackage {
+    .chosenPackage {
         margin-left: 15px;
+        font-size: 12px;
     }
 
-    .inputAccountingContainer {
+    .packageValue {
+        font-size: 14px;
+    }
+
+    .accountingContainer {
         left: 90px;
         width: 325px;
         font-size: 10px;
     }
 
-    .inputAccounting {
+    .accounting {
         width: 18px;
         height: 18px;
     }
 
-    .inputRentalContainer {
+    .accounting:checked:after {
+        height: 13px;
+    }
+
+    .rentalContainer {
         left: 90px;
         font-size: 10px;
     }
 
-    .inputRental {
+    .rental {
         width: 18px;
         height: 18px;
+    }
+
+    .rental:checked:after {
+        height: 13px;
     }
 
     #packages {
         width: 135px;
         left: 90px;
-        height: 25px;
+        height: 30px;
+        background-position-x: 108px;
     }
 
-    .activeInputAccounting {
+    .activeAccounting {
         right: 90px;
         width: 200px;
         height: 28px;
@@ -855,7 +889,7 @@ select {
         padding-left: 10px;
     }
 
-    .activeInputRental {
+    .activeRental {
         right: 90px;
         width: 200px;
         height: 28px;
@@ -863,7 +897,7 @@ select {
         padding-left: 10px;
     }
 
-    .buttonSum {
+    .sum {
         right: 90px;
         height: 30px;
         line-height: 30px;
@@ -871,19 +905,21 @@ select {
         padding-left: 10px;
     }
 
-    .btnTotal {
-        padding-left: 40px;
+    .total {
+        padding-left: 38px;
+        font-size: 16px;
     }
 }
 
-@media (max-width: 549px) {
-    .container {
-        width: 380px;
+@media (max-width: 549px) and (min-width: 360px) {
+    .calculatorContainer {
+        width: auto;
+        margin: 15px auto;
         height: 515px;
     }
 
-    h1 {
-        font-size: 24px;
+    .calculatorH1 {
+        font-size: 20px;
     }
 
     input[type="number"] {
@@ -904,20 +940,29 @@ select {
         height: 28px;
         line-height: 28px;
         padding-left: 10px;
-        left: 28%;
+        left: 24%;
         margin-left: 0;
         top: 300px;
     }
 
     #quantity {
         width: 200px;
-        left: 28%;
+        left: 24%;
         height: 25px;
         top: 85px;
     }
 
     .productsNumbers {
         margin-left: 25px;
+        font-size: 12px;
+    }
+
+    .productsTitle {
+        font-size: 12px;
+    }
+
+    .productsSum {
+        font-size: 14px;
     }
 
     .activeMonthsOrder {
@@ -926,95 +971,318 @@ select {
         line-height: 28px;
         padding-left: 10px;
         margin-left: 0;
-        left: 28%;
+        left: 24%;
         top: 335px;
     }
 
     #monthsOrder {
         width: 200px;
-        left: 28%;
+        left: 24%;
         height: 25px;
         top: 105px;
     }
 
-    .ordersNumbers {
+    .orderNumbers {
         margin-left: 25px;
+        font-size: 12px;
     }
 
-    .activeSelectPackages {
+    .orderTitle {
+        font-size: 12px;
+    }
+
+    .orderSum {
+        font-size: 14px;
+    }
+
+    .activePackages {
         width: 200px;
         height: 28px;
         line-height: 28px;
         padding-left: 10px;
-        left: 28%;
+        left: 24%;
         top: 370px;
         margin-left: 0;
     }
 
-    .selectPackage {
-        margin-left: 15px;
+    .chosenPackage {
+        margin-left: 20px;
+        font-size: 12px;
     }
 
-    .inputAccountingContainer {
-        left: 28%;
+    .packageTitle {
+        font-size: 12px;
+    }
+
+    .packageValue {
+        font-size: 14px;
+    }
+
+    .accountingContainer {
+        left: 24%;
         width: 325px;
         font-size: 12px;
         top: 205px;
     }
 
-    .inputAccounting {
+    .accounting {
         width: 24px;
         height: 24px;
     }
 
-    .inputRentalContainer {
-        left: 28%;
+    .accountingTitle {
+        font-size: 12px;
+    }
+
+    .accountingValue {
+        font-size: 14px;
+    }
+
+    .rentalContainer {
+        left: 24%;
         font-size: 12px;
         top: 245px;
     }
 
-    .inputRental {
+    .rental {
         width: 24px;
         height: 24px;
     }
 
+    .rentalTitle {
+        font-size: 12px;
+    }
+
+    .rentalValue {
+        font-size: 14px;
+    }
+
     #packages {
         width: 200px;
-        left: 28%;
+        left: 24%;
         height: 25px;
         top: 145px;
     }
 
-    .activeInputAccounting {
+    .activeAccounting {
         width: 200px;
         padding-left: 10px;
-        left: 28%;
+        left: 24%;
         top: 405px;
         margin-left: 0;
         height: 28px;
         line-height: 28px;
     }
 
-    .activeInputRental {
+    .activeRental {
         width: 200px;
         height: 28px;
         line-height: 28px;
         padding-left: 10px;
-        left: 28%;
+        left: 24%;
         top: 440px;
         margin-left: 0;
     }
 
-    .buttonSum {
+    .sum {
         height: 30px;
         line-height: 30px;
         width: 155px;
         padding-left: 10px;
         top: 490px;
-        left: 54%;
+        left: 24%;
     }
 
-    .btnTotal {
-        padding-left: 40px;
+    .total {
+        padding-left: 36px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 359px) {
+    .calculatorContainer {
+        width: auto;
+        height: 515px;
+        margin-top: 0;
+    }
+
+    .calculatorH1 {
+        font-size: 18px;
+    }
+
+    input[type="number"] {
+        padding-left: 10px;
+    }
+
+    input[type="number"]::placeholder {
+        font-size: 12px;
+    }
+
+    select {
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    .activeQuantity {
+        width: 200px;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 10px;
+        left: 15%;
+        margin-left: 0;
+        top: 300px;
+    }
+
+    #quantity {
+        width: 200px;
+        left: 15%;
+        height: 25px;
+        top: 85px;
+    }
+
+    .productsNumbers {
+        margin-left: 25px;
+        font-size: 12px;
+    }
+
+    .productsTitle {
+        font-size: 12px;
+    }
+
+    .productsSum {
+        font-size: 14px;
+    }
+
+    .activeMonthsOrder {
+        width: 200px;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 10px;
+        margin-left: 0;
+        left: 15%;
+        top: 335px;
+    }
+
+    #monthsOrder {
+        width: 200px;
+        left: 15%;
+        height: 25px;
+        top: 105px;
+    }
+
+    .orderNumbers {
+        margin-left: 25px;
+        font-size: 12px;
+    }
+
+    .orderTitle {
+        font-size: 12px;
+    }
+
+    .orderSum {
+        font-size: 14px;
+    }
+
+    .activePackages {
+        width: 200px;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 10px;
+        left: 15%;
+        top: 370px;
+        margin-left: 0;
+    }
+
+    .chosenPackage {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+
+    .packageTitle {
+        font-size: 12px;
+    }
+
+    .packageValue {
+        font-size: 14px;
+    }
+
+    .accountingContainer {
+        left: 15%;
+        width: 325px;
+        font-size: 12px;
+        top: 205px;
+    }
+
+    .accounting {
+        width: 24px;
+        height: 24px;
+    }
+
+    .accountingTitle {
+        font-size: 12px;
+    }
+
+    .accountingValue {
+        font-size: 14px;
+    }
+
+    .rentalContainer {
+        left: 15%;
+        font-size: 12px;
+        top: 245px;
+    }
+
+    .rental {
+        width: 24px;
+        height: 24px;
+    }
+
+    .rentalTitle {
+        font-size: 12px;
+    }
+
+    .rentalValue {
+        font-size: 14px;
+    }
+
+    #packages {
+        width: 200px;
+        left: 15%;
+        height: 25px;
+        top: 145px;
+    }
+
+    .activeAccounting {
+        width: 200px;
+        padding-left: 10px;
+        left: 15%;
+        top: 405px;
+        margin-left: 0;
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .activeRental {
+        width: 200px;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 10px;
+        left: 15%;
+        top: 440px;
+        margin-left: 0;
+    }
+
+    .sum {
+        height: 30px;
+        line-height: 30px;
+        width: 155px;
+        padding-left: 10px;
+        top: 475px;
+        left: 15%;
+    }
+
+    .total {
+        padding-left: 36px;
+        font-size: 16px;
     }
 }
