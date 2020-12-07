@@ -1,3 +1,5 @@
+import '../css/style.css';
+
 document.addEventListener('DOMContentLoaded', function () {
 
     const hamburger = document.querySelector(".header-hamburger");
@@ -15,5 +17,4 @@ document.addEventListener('DOMContentLoaded', function () {
         hamburgerClose.classList.remove("on");
         hamburger.classList.remove("off");
     })
-
 });

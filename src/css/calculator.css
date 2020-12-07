@@ -1,4 +1,4 @@
-h1 {
+.calculatorH1 {
     font-size: 36px;
     font-family: 'Raleway';
     font-weight: normal;
@@ -7,12 +7,12 @@ h1 {
     padding-bottom: 30px;
 }
 
-.container {
+.calculatorContainer {
     width: 1200px;
     height: 450px;
     background-color: #F7F7F7;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 20px auto 0;
 }
 
 input[type="number"] {
@@ -25,11 +25,11 @@ input[type="number"]::placeholder {
     font-size: 13px;
 }
 
-select {
+#packages {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-image: url(../assets/Arrow_Down.svg);
+    background-image: url(../../assets/Arrow_Down.svg);
     background-repeat: no-repeat;
     background-position-x: 400px;
     background-position-y: center;
@@ -38,7 +38,7 @@ select {
     color: #ccc;
 }
 
-.formSection {
+.calculatorFormSection {
     display: flex;
     justify-content: flex-start;
     margin-left: 40px;
@@ -250,13 +250,12 @@ select {
     font-family: 'Open Sans';
     font-size: 20px;
     font-weight: bold;
-    padding-left: 60px;
+    padding-left: 40px;
 }
 
 .accountingContainer {
     display: flex;
     align-items: center;
-    margin-left: -4px;
 }
 
 .accounting {
@@ -284,12 +283,11 @@ select {
 }
 
 .accounting:checked:after {
-    content: url(../assets/Checkmark.svg);
+    content: url(../../assets/Checkmark.svg);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(../assets/Checkmark.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -300,7 +298,6 @@ select {
 .rentalContainer {
     display: flex;
     align-items: center;
-    margin-left: -4px;
 }
 
 .rental {
@@ -328,12 +325,11 @@ select {
 }
 
 .rental:checked:after {
-    content: url(../assets/Checkmark.svg);
+    content: url(../../assets/Checkmark.svg);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(../assets/Checkmark.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -419,6 +415,7 @@ select {
     #packages {
         width: 420px;
         left: 360px;
+        background-position-x: 386px;
     }
 
     .accountingContainer {
@@ -468,6 +465,7 @@ select {
     #packages {
         width: 380px;
         left: 330px;
+        background-position-x: 342px;
     }
 
     .accountingContainer {
@@ -492,7 +490,7 @@ select {
 }
 
 @media (max-width: 1351px) and (min-width: 1150px) {
-    .container {
+    .calculatorContainer {
         width: 1050px;
     }
 
@@ -529,6 +527,7 @@ select {
     #packages {
         width: 340px;
         left: 200px;
+        background-position-x: 302px;
     }
 
     .activeAccounting {
@@ -545,7 +544,7 @@ select {
 }
 
 @media (max-width: 1149px) and (min-width: 1000px) {
-    .container {
+    .calculatorContainer {
         width: 980px;
     }
 
@@ -582,6 +581,7 @@ select {
     #packages {
         width: 270px;
         left: 200px;
+        background-position-x: 232px;
     }
 
     .activeAccounting {
@@ -598,11 +598,11 @@ select {
 }
 
 @media (max-width: 999px) and (min-width: 850px) {
-    .container {
+    .calculatorContainer {
         width: 830px;
     }
 
-    h1 {
+    .calculatorH1 {
         font-size: 30px;
     }
 
@@ -646,6 +646,7 @@ select {
         width: 230px;
         left: 150px;
         height: 35px;
+        background-position-x: 192px;
     }
 
     .activeAccounting {
@@ -664,11 +665,11 @@ select {
 }
 
 @media (max-width: 849px) and (min-width: 700px) {
-    .container {
+    .calculatorContainer {
         width: 680px;
     }
 
-    h1 {
+    .calculatorH1 {
         font-size: 26px;
     }
 
@@ -684,7 +685,7 @@ select {
     }
 
     .productsNumbers {
-        margin-left: 45px;
+        margin-left: 35px;
     }
 
     .activeMonthsOrder {
@@ -699,7 +700,7 @@ select {
     }
 
     .orderNumbers {
-        margin-left: 55px;
+        margin-left: 45px;
     }
 
     .activePackages {
@@ -724,6 +725,7 @@ select {
         width: 200px;
         left: 100px;
         height: 30px;
+        background-position-x: 170px;
     }
 
     .activeAccounting {
@@ -745,17 +747,17 @@ select {
     }
 
     .total {
-        padding-left: 40px;
+        padding-left: 32px;
     }
 }
 
 @media (max-width: 699px) and (min-width: 550px) {
-    .container {
+    .calculatorContainer {
         width: 530px;
         height: 385px;
     }
 
-    h1 {
+    .calculatorH1 {
         font-size: 26px;
     }
 
@@ -783,11 +785,16 @@ select {
     #quantity {
         width: 135px;
         left: 90px;
-        height: 25px;
+        height: 30px;
     }
 
     .productsNumbers {
-        margin-left: 25px;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+    .productsSum {
+        font-size: 14px;
     }
 
     .activeMonthsOrder {
@@ -798,14 +805,27 @@ select {
         padding-left: 10px;
     }
 
+    .accountingValue {
+        font-size: 14px;
+    }
+
+    .rentalValue {
+        font-size: 14px;
+    }
+
     #monthsOrder {
         width: 135px;
         left: 90px;
-        height: 25px;
+        height: 30px;
     }
 
     .orderNumbers {
         margin-left: 25px;
+        font-size: 12px;
+    }
+
+    .orderSum {
+        font-size: 14px;
     }
 
     .activePackages {
@@ -818,6 +838,11 @@ select {
 
     .chosenPackage {
         margin-left: 15px;
+        font-size: 12px;
+    }
+
+    .packageValue {
+        font-size: 14px;
     }
 
     .accountingContainer {
@@ -831,6 +856,10 @@ select {
         height: 18px;
     }
 
+    .accounting:checked:after {
+        height: 13px;
+    }
+
     .rentalContainer {
         left: 90px;
         font-size: 10px;
@@ -841,10 +870,15 @@ select {
         height: 18px;
     }
 
+    .rental:checked:after {
+        height: 13px;
+    }
+
     #packages {
         width: 135px;
         left: 90px;
-        height: 25px;
+        height: 30px;
+        background-position-x: 108px;
     }
 
     .activeAccounting {
@@ -872,18 +906,20 @@ select {
     }
 
     .total {
-        padding-left: 40px;
+        padding-left: 38px;
+        font-size: 16px;
     }
 }
 
-@media (max-width: 549px) {
-    .container {
-        width: 380px;
+@media (max-width: 549px) and (min-width: 360px) {
+    .calculatorContainer {
+        width: auto;
+        margin: 15px auto;
         height: 515px;
     }
 
-    h1 {
-        font-size: 24px;
+    .calculatorH1 {
+        font-size: 20px;
     }
 
     input[type="number"] {
@@ -904,20 +940,29 @@ select {
         height: 28px;
         line-height: 28px;
         padding-left: 10px;
-        left: 28%;
+        left: 24%;
         margin-left: 0;
         top: 300px;
     }
 
     #quantity {
         width: 200px;
-        left: 28%;
+        left: 24%;
         height: 25px;
         top: 85px;
     }
 
     .productsNumbers {
         margin-left: 25px;
+        font-size: 12px;
+    }
+
+    .productsTitle {
+        font-size: 12px;
+    }
+
+    .productsSum {
+        font-size: 14px;
     }
 
     .activeMonthsOrder {
@@ -926,19 +971,28 @@ select {
         line-height: 28px;
         padding-left: 10px;
         margin-left: 0;
-        left: 28%;
+        left: 24%;
         top: 335px;
     }
 
     #monthsOrder {
         width: 200px;
-        left: 28%;
+        left: 24%;
         height: 25px;
         top: 105px;
     }
 
     .orderNumbers {
         margin-left: 25px;
+        font-size: 12px;
+    }
+
+    .orderTitle {
+        font-size: 12px;
+    }
+
+    .orderSum {
+        font-size: 14px;
     }
 
     .activePackages {
@@ -946,17 +1000,26 @@ select {
         height: 28px;
         line-height: 28px;
         padding-left: 10px;
-        left: 28%;
+        left: 24%;
         top: 370px;
         margin-left: 0;
     }
 
     .chosenPackage {
-        margin-left: 15px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+
+    .packageTitle {
+        font-size: 12px;
+    }
+
+    .packageValue {
+        font-size: 14px;
     }
 
     .accountingContainer {
-        left: 28%;
+        left: 24%;
         width: 325px;
         font-size: 12px;
         top: 205px;
@@ -967,8 +1030,16 @@ select {
         height: 24px;
     }
 
+    .accountingTitle {
+        font-size: 12px;
+    }
+
+    .accountingValue {
+        font-size: 14px;
+    }
+
     .rentalContainer {
-        left: 28%;
+        left: 24%;
         font-size: 12px;
         top: 245px;
     }
@@ -978,9 +1049,17 @@ select {
         height: 24px;
     }
 
+    .rentalTitle {
+        font-size: 12px;
+    }
+
+    .rentalValue {
+        font-size: 14px;
+    }
+
     #packages {
         width: 200px;
-        left: 28%;
+        left: 24%;
         height: 25px;
         top: 145px;
     }
@@ -988,7 +1067,7 @@ select {
     .activeAccounting {
         width: 200px;
         padding-left: 10px;
-        left: 28%;
+        left: 24%;
         top: 405px;
         margin-left: 0;
         height: 28px;
@@ -1000,7 +1079,7 @@ select {
         height: 28px;
         line-height: 28px;
         padding-left: 10px;
-        left: 28%;
+        left: 24%;
         top: 440px;
         margin-left: 0;
     }
@@ -1011,10 +1090,199 @@ select {
         width: 155px;
         padding-left: 10px;
         top: 490px;
-        left: 54%;
+        left: 24%;
     }
 
     .total {
-        padding-left: 40px;
+        padding-left: 36px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 359px) {
+    .calculatorContainer {
+        width: auto;
+        height: 515px;
+        margin-top: 0;
+    }
+
+    .calculatorH1 {
+        font-size: 18px;
+    }
+
+    input[type="number"] {
+        padding-left: 10px;
+    }
+
+    input[type="number"]::placeholder {
+        font-size: 12px;
+    }
+
+    select {
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    .activeQuantity {
+        width: 200px;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 10px;
+        left: 15%;
+        margin-left: 0;
+        top: 300px;
+    }
+
+    #quantity {
+        width: 200px;
+        left: 15%;
+        height: 25px;
+        top: 85px;
+    }
+
+    .productsNumbers {
+        margin-left: 25px;
+        font-size: 12px;
+    }
+
+    .productsTitle {
+        font-size: 12px;
+    }
+
+    .productsSum {
+        font-size: 14px;
+    }
+
+    .activeMonthsOrder {
+        width: 200px;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 10px;
+        margin-left: 0;
+        left: 15%;
+        top: 335px;
+    }
+
+    #monthsOrder {
+        width: 200px;
+        left: 15%;
+        height: 25px;
+        top: 105px;
+    }
+
+    .orderNumbers {
+        margin-left: 25px;
+        font-size: 12px;
+    }
+
+    .orderTitle {
+        font-size: 12px;
+    }
+
+    .orderSum {
+        font-size: 14px;
+    }
+
+    .activePackages {
+        width: 200px;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 10px;
+        left: 15%;
+        top: 370px;
+        margin-left: 0;
+    }
+
+    .chosenPackage {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+
+    .packageTitle {
+        font-size: 12px;
+    }
+
+    .packageValue {
+        font-size: 14px;
+    }
+
+    .accountingContainer {
+        left: 15%;
+        width: 325px;
+        font-size: 12px;
+        top: 205px;
+    }
+
+    .accounting {
+        width: 24px;
+        height: 24px;
+    }
+
+    .accountingTitle {
+        font-size: 12px;
+    }
+
+    .accountingValue {
+        font-size: 14px;
+    }
+
+    .rentalContainer {
+        left: 15%;
+        font-size: 12px;
+        top: 245px;
+    }
+
+    .rental {
+        width: 24px;
+        height: 24px;
+    }
+
+    .rentalTitle {
+        font-size: 12px;
+    }
+
+    .rentalValue {
+        font-size: 14px;
+    }
+
+    #packages {
+        width: 200px;
+        left: 15%;
+        height: 25px;
+        top: 145px;
+    }
+
+    .activeAccounting {
+        width: 200px;
+        padding-left: 10px;
+        left: 15%;
+        top: 405px;
+        margin-left: 0;
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .activeRental {
+        width: 200px;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 10px;
+        left: 15%;
+        top: 440px;
+        margin-left: 0;
+    }
+
+    .sum {
+        height: 30px;
+        line-height: 30px;
+        width: 155px;
+        padding-left: 10px;
+        top: 475px;
+        left: 15%;
+    }
+
+    .total {
+        padding-left: 36px;
+        font-size: 16px;
     }
 }

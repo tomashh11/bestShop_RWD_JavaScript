@@ -1,3 +1,5 @@
+import '../css/calculator.css';
+
 document.addEventListener('DOMContentLoaded', function () {
 
     const quantity = document.querySelector("#quantity");
