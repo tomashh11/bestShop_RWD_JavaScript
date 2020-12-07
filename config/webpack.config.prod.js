@@ -78,7 +78,15 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
+            filename: 'index.html',
             template: "src/index.html",
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'calculator.html',
+            template: "src/calculator.html",
             minify: {
                 collapseWhitespace: true
             }
