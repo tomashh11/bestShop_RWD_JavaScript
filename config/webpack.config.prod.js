@@ -49,7 +49,6 @@ module.exports = {
                         }
                     }
                 ]
-
             },
             {
                 test: /\.js$/,
@@ -92,7 +91,7 @@ module.exports = {
             }
         }),
         new MiniCssExtractPlugin({
-            filename: 'css/[name]-[contenthash].css'
+            filename: '[name]-[contenthash].css'
         }),
     ]
 };
