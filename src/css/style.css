@@ -109,13 +109,13 @@
     transition: 0.4s;
 }
 
-
 .banner-calculator:hover {
     color: #08A6E4;
     background-color: #fff;
     cursor: pointer;
     border: .1px solid #08A6E4;
 }
+
 .banner-container {
     text-align: center;
     margin-top: 70px;
@@ -920,6 +920,10 @@ input[type="text"] {
         left: -110px;
     }
 
+    .main-iphone-container {
+        justify-content: space-between;
+    }
+
     .main-iphone {
         width: 80%;
         margin: 0 auto 30px;
@@ -978,7 +982,7 @@ input[type="text"] {
     }
 
     .box-basic-btn {
-        left: 56px;
+        left: 26%;
     }
 
     .box-basic:hover {
@@ -990,7 +994,7 @@ input[type="text"] {
     }
 
     .box-premium-btn {
-        left: 56px;
+        left: 26%;
     }
 
     .box-premium:hover {
@@ -1002,7 +1006,7 @@ input[type="text"] {
     }
 
     .box-professional-btn {
-        left: 56px;
+        left: 26%;
     }
 
     .box-professional:hover {
@@ -1057,10 +1061,14 @@ input[type="text"] {
     }
 
     .main-laptop-img-background {
-        width: 280px;
+        width: 260px;
         height: 160px;
-        top: 74px;
-        left: -90px;
+        top: 72px;
+        left: -74px;
+    }
+
+    .main-iphone-container {
+        justify-content: space-between;
     }
 
     .main-iphone {
@@ -1090,7 +1098,7 @@ input[type="text"] {
         margin-left: 20px;
         margin-top: 80px;
         width: 210px;
-        height: 210px;
+        height: 190px;
     }
 
     .main-iphone-img {
@@ -1109,7 +1117,7 @@ input[type="text"] {
     }
 
     .main-text-container-container {
-        width: 58%;
+        width: 54%;
     }
 
     .main-text-title {
@@ -1126,7 +1134,7 @@ input[type="text"] {
     }
 
     .main-text-picture {
-        width: 40%;
+        width: 42%;
     }
 
     .main-text-picture-img {
@@ -1373,6 +1381,8 @@ input[type="text"] {
 
     .main-container {
         width: 80%;
+        height: 1530px;
+        overflow: hidden;
     }
 
     .main-laptop-container {
@@ -1599,7 +1609,7 @@ input[type="text"] {
     }
 
     input[type="text"] {
-        width: 100%;
+        width: 90%;
     }
 
     .questions-form-rodo {
@@ -1746,6 +1756,7 @@ input[type="text"] {
 
     .main-container {
         width: 80%;
+        overflow: hidden;
     }
 
     .main-laptop-container {
@@ -1828,7 +1839,7 @@ input[type="text"] {
     }
 
     .main-text {
-        height: 450px;
+        height: 530px;
         width: 100%;
     }
 
@@ -1971,15 +1982,17 @@ input[type="text"] {
     }
 
     .questions {
-        margin: 65px;
-        width: 85%;
+        width: 80%;
+        height: auto;
+        padding-bottom: 130px;
+        margin-top: 0;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        overflow: hidden;
     }
 
     .questions-contact {
-        margin: 70px 0 50px;
+        margin: 0 0 50px;
     }
 
     .questions-contact-title {
@@ -2004,7 +2017,7 @@ input[type="text"] {
     }
 
     input[type="text"] {
-        width: 70%;
+        width: 80%;
     }
 
     .questions-form-rodo {
@@ -2012,16 +2025,12 @@ input[type="text"] {
     }
 
     .questions-form-rodo-text {
-        margin-right: 5px;
-    }
-
-    .footer {
-        margin-top: 250px;
+        margin-right: 10px;
     }
 
     .questions-form-send-btn {
-        right: 75px;
-        bottom: -75px;
+        right: 90px;
+        bottom: -90px;
         padding: 15px 70px;
         border: .1px solid #08A6E4;
     }
@@ -2032,5 +2041,9 @@ input[type="text"] {
 
     .footer-logo-text {
         font-size: 10px;
+    }
+
+    .footer-size {
+        margin-top: 0;
     }
 }

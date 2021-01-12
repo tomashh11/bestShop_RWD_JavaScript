@@ -599,7 +599,8 @@ input[type="number"]::placeholder {
 
 @media (max-width: 999px) and (min-width: 850px) {
     .calculatorContainer {
-        width: 830px;
+        width: 90%;
+        height: 90vh;
     }
 
     .calculatorH1 {
@@ -666,7 +667,8 @@ input[type="number"]::placeholder {
 
 @media (max-width: 849px) and (min-width: 700px) {
     .calculatorContainer {
-        width: 680px;
+        width: 90%;
+        height: 90vh;
     }
 
     .calculatorH1 {
@@ -753,8 +755,8 @@ input[type="number"]::placeholder {
 
 @media (max-width: 699px) and (min-width: 550px) {
     .calculatorContainer {
-        width: 530px;
-        height: 385px;
+        width: 90%;
+        height: 90vh;
     }
 
     .calculatorH1 {
@@ -913,9 +915,9 @@ input[type="number"]::placeholder {
 
 @media (max-width: 549px) and (min-width: 360px) {
     .calculatorContainer {
-        width: auto;
+        width: 90%;
         margin: 15px auto;
-        height: 515px;
+        height: 520px;
     }
 
     .calculatorH1 {
@@ -1020,7 +1022,6 @@ input[type="number"]::placeholder {
 
     .accountingContainer {
         left: 24%;
-        width: 325px;
         font-size: 12px;
         top: 205px;
     }
@@ -1101,9 +1102,9 @@ input[type="number"]::placeholder {
 
 @media (max-width: 359px) {
     .calculatorContainer {
-        width: auto;
+        width: 90%;
         height: 515px;
-        margin-top: 0;
+        margin: 10px auto;
     }
 
     .calculatorH1 {
@@ -1208,7 +1209,6 @@ input[type="number"]::placeholder {
 
     .accountingContainer {
         left: 15%;
-        width: 325px;
         font-size: 12px;
         top: 205px;
     }
